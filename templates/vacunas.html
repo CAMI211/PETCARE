@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Control de Vacunas y Salud General </h2>
+
+<div class="row">
+    {% for m in mascotas %}
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success fw-bold"> {{ m.nombre }}</h5>
+                <p class="card-text"><strong>Raza:</strong> {{ m.raza }}</p>
+                <p class="card-text"><strong>Peso actual:</strong> {{ m.peso }}</p>
+                <p class="card-text"><strong>Vacunas:</strong> {{ m.vacunas }}</p>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <p>No hay mascotas registradas para mostrar salud o vacunas.</p>
+    {% endfor %}
+</div>
+{% endblock %}

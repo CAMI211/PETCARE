@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Registrar Nueva Mascota</h2>
+    
+    <form method="POST">
+        <div class="mb-3">
+            <label>Nombre de la Mascota:</label>
+            <input type="text" name="nombre" class="form-control" placeholder="Ej. kiki">
+        </div>
+        
+        <div class="mb-3">
+            <label>Raza:</label>
+            <input type="text" name="raza" class="form-control" placeholder="Ej. gato">
+        </div>
+        
+        <div class="mb-3">
+            <label>Edad (años):</label>
+            <input type="text" name="edad" class="form-control" placeholder="Ej. 1">
+        </div>
+        
+        <div class="mb-3">
+            <label>Nombre del Dueño:</label>
+            <input type="text" name="dueno" class="form-control" placeholder="Ej. Camila">
+        </div>
+        
+        <div class="mb-3">
+            <label>Peso inicial (kg):</label>
+            <input type="text" name="peso" class="form-control" placeholder="Ej. 3.5 kg">
+        </div>
+        
+        <div class="mb-3">
+            <label>Registro de Vacunas:</label>
+            <input type="text" name="vacunas" class="form-control" placeholder="Ej. Rabia">
+        </div>
+        
+        <button type="submit"class="btn-custom-green">Guardar Mascota</button>
+    </form>
+</div>
+{% endblock %}

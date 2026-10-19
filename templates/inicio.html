@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row align-items-center card-transparente p-5 rounded shadow-sm">
+    <div class="col-md-8">
+        <h1 class="display-4 text-success fw-bold">Bienvenido a Petcare </h1>
+        <p class="lead text-muted">Aplicacion para registar a tus mascotas y tenerlas bajo control.</p>
+        <hr class="my-4">
+        <a class="btn-custom-green" href="{{ url_for('registrar_mascota') }}" role="button">Registrar una Mascota</a>
+      <a class="btn-custom-green ms-2" href="{{ url_for('ver_mascotas') }}" role="button">Ver Mascotas</a>
+    </div>
+</div>
+{% endblock %}
